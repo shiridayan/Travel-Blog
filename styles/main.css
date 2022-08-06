@@ -1,0 +1,41 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+@import url(./_base-blog.css);
+
+.open{
+    display: flex; 
+    display: none;  
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    flex-basis: 100%;
+}
+
+li.social{
+    flex-basis: 25%;
+}
+
+@media all and (min-width: 550px) {
+    li{
+        flex-basis: 50%;
+    }
+}
+@media all and (min-width: 900px) {
+    ul{
+        flex-wrap: nowrap;
+    }
+
+    li{
+        flex: 1;
+    }
+    li.social{
+        flex: 1;
+    }
+}
+
